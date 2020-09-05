@@ -16,4 +16,8 @@ contract('Deployer', function(accounts) {
     it("test WXRP deployer script on private net.", async function () {
         await deployer.deploy("scripts/deployerInputTestrpc.json", 20, web3.currentProvider.host, false, "WXRP");
     });
+    
+    it("test WPKT deployer script on private net.", async function () {
+        await deployer.deploy("scripts/deployerInputTestrpc.json", 20, web3.currentProvider.host, false, "WPKT");
+    });
 });
